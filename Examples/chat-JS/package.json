@@ -1,0 +1,19 @@
+{
+    "name": "chat-js",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon src/index.js"
+    },
+    "author": "lfmv",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.2",
+        "mongoose": "^6.1.6",
+        "socket.io": "^4.4.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0x.15"
+    }
+}
