@@ -1,0 +1,51 @@
+<head>
+    
+    <script type="text/javascript" src = "videojs/jquery-3.6.0.min.js"></script>
+    <link href="videojs/video-js.css" rel="stylesheet" />
+    <script type="text/javascript" src = "videojs/video.min.js"></script>
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+    <script type="text/javascript">
+         
+         function Test(obj) {
+             var val = $(obj).val();
+             //sourceDom = $("<source src=\""+val+"\">");
+             $("#video-box video").prop("src",val);
+             //$("#video-box video").append("<source src=\""+val+"\">");
+             $("#video-box").show();
+             //$("#video-box video").play()    
+             console.log(obj);
+         }
+        </script>  
+</head>
+  
+<body>
+    <table>
+        <tr>
+            <td rowspan="2">
+                <div id = "video-box">
+                    <video id="example_video_1" class="video-js" controls width="700" height="300" 
+                        
+                        data-setup="">
+                        <source src="MY_VIDEO.mp4" type = "video/mp4" id = "videoURL">
+                      <!-- <source src="MY_VIDEO.webm" type="video/webm" /> -->
+                     
+                    </video>
+                    </div>
+            </td>
+            <td>
+                <button id="button" value="MY_VIDEO.mp4" OnClick="Test(this)">Video 1</button>
+            </td>
+            <tr>
+                <td>
+                
+                    <button id="button" value="MY_VIDEO2.mp4" OnClick="Test(this)">Video 2</button>
+                </td>
+            </tr>
+        </tr>
+    </table>
+
+
+    
+    
+  </body>
